@@ -17,6 +17,12 @@ markdown file.
   
 Please note that I used the following source in order to write this code:  
 https://www.geeksforgeeks.org/iterative-quick-sort/  
+I primarily used it in order to see how recursion could be implemented into an  
+iterative fashion using a specially created stack, as that concept was fairly  
+foreign to me before starting this exercise. However, I am no confident in my  
+abilities to change code from recursive to iterative and vice-versa.  
+In addition to this, I used the documentation for quicksort found in the slides  
+in order to get me code to work properly.
 
 **ANSWER**:  
 The code that I wrote for this assignment would have a worst case runtime of  
