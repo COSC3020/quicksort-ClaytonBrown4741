@@ -14,3 +14,18 @@ recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+  
+Please note that I used the following source in order to write this code:  
+https://www.geeksforgeeks.org/iterative-quick-sort/  
+
+**ANSWER**:  
+The code that I wrote for this assignment would have a worst case runtime of  
+$\Theta(n^2)$. To begin, one must look at the two major sources of runtime  
+within the code: The While Loop and the For Loop that are used. The while  
+loop will repeat until the stack that is being used is completely empty.  
+Since this will occur once every entry in the array has been turned into a,  
+pivot, then this would have an asymptotic complexity of n. Next, we have  
+the for loop. Assuming that this is the worst case scenario, then this loop  
+will have to iterate over every entry in the array at least once. This also  
+has an asymptotic complexity of n. Because the for loop is within the while  
+loop, we multiply the two n's together to get the final answer of $\Theta(n^2)$.
