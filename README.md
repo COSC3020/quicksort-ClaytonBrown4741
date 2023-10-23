@@ -26,12 +26,14 @@ in order to get me code to work properly.
 
 **ANSWER**:  
 The code that I wrote for this assignment would have a worst case runtime of  
-$\Theta(n^2)$. To begin, one must look at the two major sources of runtime  
-within the code: The While Loop and the For Loop that are used. The while  
-loop will repeat until the stack that is being used is completely empty.  
-Since this will occur once every entry in the array has been turned into a,  
-pivot, then this would have an asymptotic complexity of n. Next, we have  
-the for loop. Assuming that this is the worst case scenario, then this loop  
-will have to iterate over every entry in the array at least once. This also  
-has an asymptotic complexity of n. Because the for loop is within the while  
-loop, we multiply the two n's together to get the final answer of $\Theta(n^2)$.
+$\Theta(n^2)$. The worst case, of course, would be if we were dealing with a  
+list of elements that was sorted in reverse order. If this happens, then the  
+program will be forced to use every single entry as a pivot and move said pivot  
+to the end of the list which will take n amount of time. Additionally, every  
+time a pivot is set, the code must start over the list from the very beginning.  
+As a result, the code will repeat $\Theta(n^2)$ times. This is also the average  
+runtime. The best-case runtime, however, is $\Theta(n)$. This occurs if the code is  
+given a list that is already sorted.  
+PLEASE NOTE: My code still has a lot of things that are commented out from my  
+previous attempt at this. I have decided to keep them as comments instead of  
+deleting them in case I ever decide to do anything with it in the future.
